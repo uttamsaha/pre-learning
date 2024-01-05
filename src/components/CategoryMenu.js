@@ -2,12 +2,12 @@
 
 const CategoryMenu = ({ categories, selectedCategory, onCategoryChange }) => {
     return (
-      <div className="flex">
+      <div className="flex w-[210px] relative">
         {categories.map((category) => (
           <span
             key={category}
-            className={`mx-2 cursor-pointer ${
-              category === selectedCategory ? 'underline' : ''
+            className={` px-4 border-b-2  cursor-pointer ${
+              category === selectedCategory ? 'border-b-2 border-orange-500' : ''
             }`}
             onClick={() => onCategoryChange(category)}
           >

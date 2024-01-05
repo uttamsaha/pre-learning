@@ -7,7 +7,6 @@ const Blog = ({ category, posts }) => {
 
   return (
     <div>
-      <h1>{category === 'all' ? 'All Posts' : `Posts in ${category} Category`}</h1>
       <ul>
         {filteredPosts.map((post) => (
           <li key={post.id}>{post.title}</li>
