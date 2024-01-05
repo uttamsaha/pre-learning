@@ -16,6 +16,8 @@ const HomePage = () => {
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
   };
+  const filteredPosts = selectedCategory === 'all' ? posts : posts.filter(post => post.category === selectedCategory);
+
 
   return (
     <div>
@@ -24,7 +26,11 @@ const HomePage = () => {
         selectedCategory={selectedCategory}
         onCategoryChange={handleCategoryChange}
       />
-      <Blog category={selectedCategory} posts={posts} />
+      {/* <Blog category={selectedCategory} posts={posts} /> */}
+      {
+        filteredPosts.map(post => <p key={post.id}>{post.title}</p>)
+      }
+
     </div>
   );
 };
