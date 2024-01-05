@@ -1,0 +1,33 @@
+{
+  "workbench.colorTheme": "Andromeda Italic Bordered",
+  "window.menuBarVisibility": "visible",
+  "editor.fontFamily": "'Fira Code'",
+  "editor.fontSize": 16,
+  "editor.fontWeight": "normal",
+  "editor.fontLigatures": true,
+  "editor.cursorBlinking": "expand",
+  "terminal.integrated.fontSize": 15,
+  "workbench.iconTheme": "vscode-icons",
+  "window.titleBarStyle": "custom",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  // other settings
+  "tailwindCSS.includeLanguages": {
+    "javascript": "javascript",
+    "html": "HTML"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "solidity.compileUsingRemoteVersion": "v0.8.19+commit.7dd6d404",
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
+  "explorer.confirmDelete": false
+}
+
